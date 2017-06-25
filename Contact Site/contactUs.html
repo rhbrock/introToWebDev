@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title> Contact Us Form </title>
+<style>
+.left {
+    margin: left;
+    width: 30%;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <div class="left">
+            <label id="FirstNameLabel" for="FirstName">First Name:</label>
+            <input id="FullName" name="FulleName" type="text"/>
+        </div></br>
+         <div class="left">
+            <label id="LastNameLabel" for="LastName">Last Name:</label>
+            <input id="LastName" name="LastName" type="text"/>
+        </div></br>
+        <div class="left">
+            <label id="EmailLabel" for="Email">Email:</label>
+            <input id="EmailAddress" name="EmailAddress" type="text"/>
+        </div></br>
+        <div>
+            <label id="TypeofLicense" for="License">Type of License:</label>
+            <input type="radio" name="selection" value="Business" checked/>Business
+            <input type="radio" name="selection" value="Personal"/>Personal
+        </div></br>
+        <div>
+            Reason:&nbsp<select name="Reason">
+                    <option value="SelectAReason">Select a Reason</option>
+                    <option value="SoftwareSupport">Software Support</option>
+                    <option value="HardwareSupport">Hardware Support</option>
+                    <option value="InformationRequest">Information Request</option>
+            </select>
+        </div></br>
+        <div>
+            <label id="AddInfo" for="AddInfo">Additional Information: </label>
+            <textarea id="Addinfo" name="AddInfo"></textarea></br></br>
+            <input type="checkbox" name="choice" value="terms"/>I Have Read the Terms of Service</br></br>
+            <input type="submit" value="Send Request">
+        </div>
+       
+    </form>
+</body>
+
+</html>
