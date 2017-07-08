@@ -1,13 +1,37 @@
+html {
+    font-family: 'Comic Sans MS';
+}
+
 h1 {
-    color:black; text-align: center;
+    color:black; 
+    text-align: center;
+}
+
+
+.links{
+    text-align: left;
+     word-spacing: 10px;
 }
 
 div {
     text-align: center;
 }
 
-.links{
-    text-align: left;
+#menuLeft{
+
+    width: 275px;
+    padding: 10px;
+    margin: 0px 150px 200px 80px;
+
+
+}
+
+#menuCenter{
+    position: absolute;
+    top: 175px;
+    left: 825px;
+    width: 275px;
+    
 }
 
 
