@@ -1,37 +1,44 @@
-html {
-    font-family: 'Comic Sans MS';
+body {
+    font-family: 'Comic Sans MS', Vernanda, Tahoma, Aerial;
+    background: #e6e6ff;
 }
-
 h1 {
     color:black; 
     text-align: center;
+    text-shadow: 2px 2px #6699ff;
+    font-size: 52px;
+
 }
 
-
-.links{
+a {
     text-align: left;
-     word-spacing: 10px;
+  text-decoration: underline;
+  font-weight: none;
+}
+a:hover{
+    font-weight: bold;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
 }
 
 div {
     text-align: center;
-}
 
+}
 #menuLeft{
+    position: fixed;
+    top: 225px;  
+    left: 200px;
 
-    width: 275px;
-    padding: 10px;
-    margin: 0px 150px 200px 80px;
+} 
 
-
+#menuRight{
+    position: fixed;
+    top: 225px;  
+    right: 200px;
 }
-
-#menuCenter{
-    position: absolute;
-    top: 175px;
-    left: 825px;
-    width: 275px;
-    
+table{
+    text-align: center;
 }
-
-

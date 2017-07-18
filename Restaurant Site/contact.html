@@ -9,13 +9,36 @@
     </head>
     <body>
         <h1>Bar Roger</h1><hr></br>
-        <div class="links">
+    
             <a href="home.html">Home</a>
             <a href="menu.html">Menu</a>
             <a href="contact.html">Contact Us</a></br></br><hr></br>
-        </div>
+     
         <div>
-            <p>CONTACT US</p>
+        <form action="restaurantPage.html" method="POST">
+    Name: <input type="text" name="nameInput" /><br>
+    Email: <input type="text" name="emailInput" /><br>
+    Phone: <input type="text" name="phoneInput" /><br>
+
+     Reasons For Inquiry:<select name="reasons">
+        <option value="catering">Catering</option>
+        <option value="PRivate Party">Private Party</option>
+        <option value="Feedback">Feedback</option>
+            </select><br>
+    Additional Information<textarea name="briefDescription"></textarea>
+        <br>
+        Have You Been To This Restaurant:>
+    <input type="radio" name="answer" value="Yes">Yes
+    <input type="radio" name="answer" value="No"/>No<br/>
+    Best Days To Contact You:
+    <input type="checkbox" name="myChoices" value="Monday"/>M
+    <input type="checkbox" name="myChoices" value="Tuesday" />T
+    <input type="checkbox" name="myChoices" value="Wednesday"/>W
+    <input type="checkbox" name="myChoices" value="Thursday"/>Th
+    <input type="checkbox" name="myChoices" value="Friday"/>F<br>
+     <input type="submit" value="Submit Request"/><br/>
+    
+</form>
         </div>
         <hr>
         <div>
