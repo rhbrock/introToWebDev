@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        rel="stylesheet" type="text/css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script type="text/JavaScript" src="displayEvens.js"></script>
+
+        <title>Display Evens</title>
+
+        <style>
+            div {padding-left: 30px; padding-right: 30; padding-top: 10; padding-bottom: 10;}
+            table {text-align: right;}
+        </style>
+
+    </head>
+    <body>
+        <div class>
+            <h2>Sample</h2><br>
+            <table>
+                <tr>
+                    <td>
+                        <form name="disEv" onsubmit="return validateItems();" onreset="resetForm();" class="form-inline">
+                            Starting Number <input type="number" id="startingNumber"><br><br>
+                            Ending Number <input type="number" id="endingNumber"><br><br>
+                            Step <input type="number" id="step"><br><br>
+                            <button type="submit" id="submitButton" class="btn">Display Evens</button>
+                            <button type="reset" id="resetButton" class="btn">Clear</bu
+                        </form>
+                    </td>
+                </tr>
+            </table><br>
+            <p>Here are the even numbers between <span id="startingNumber"></span> and <span id="endingNUmber"></span> 
+            by <span id="step"></span>'s.</p>
+            <table>
+                <tr>
+                    <td>1<span id="startingNumber"></span></td>
+                </tr>
+                <tr>
+                    <td>2<span id="endingNUmber"></td>
+                </tr>
+                <tr>
+                    <td>3<span id="step"></span></td>
+                </tr>
+        </div>
+    </body>
+</html>
