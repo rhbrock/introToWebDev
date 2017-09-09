@@ -4,16 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-        rel="stylesheet" type="text/css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-        <script type="text/JavaScript" src="displayEvens.js"></script>
-
+  <script type="text/JavaScript" src="displayEvens.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
         <title>Display Evens</title>
 
         <style>
@@ -23,32 +16,39 @@
 
     </head>
     <body>
-        <div class>
+        <div class="container">
             <h2>Sample</h2><br>
             <table>
                 <tr>
                     <td>
-                        <form name="displayEvens" onsubmit="return validateItems();" onreset="resetForm();" class="form-inline">
-                            Starting Number <input type="number" id="startingNumber"><br><br>
-                            Ending Number <input type="number" id="endingNumber"><br><br>
-                            Step <input type="number" id="step"><br><br>
+                        <form name="displayEvens" onsubmit="return runTheNumbers();" 
+                        onreset="resetForm();" class="form-inline">
+                            <div class="form-group">
+                                <label for = "Starting Number">Starting Number</label>
+                                <input type="number" class="form-control" id="num1">
+                            </div><br><br>
+                            <div class="form-group">
+                                <label for = "Ending Number">Ending Number</label> 
+                                <input type="number" class="form-control" id="num2">
+                            </div><br><br>
+                            <div class="form-group">
+                                <label for = "Step">Step</label> 
+                                <input type="number" class="form-control" id="num3">
+                            </div><br><br>
                             <button type="submit" id="submitButton" class="btn btn-default">Display Evens</button>
-                            <button type="reset" id="resetButton" class="btn">Clear</bu
+                            <button type="reset" id="resetButton" class="btn">Clear</button>
                         </form>
                     </td>
                 </tr>
             </table><br>
-            <p>Here are the even numbers between <span id="startingNumber"></span> and <span id="endingNUmber"></span> 
-            by <span id="step"></span>'s.</p>
-            <table>
+           
+            <table id="answer" class="table table-striped" style="display:none;">
                 <tr>
-                    <td>1<span id="startingNumber"></span></td>
+                    <td>Here are the even numbers between <span id="start"></span> 
+                     and <span id="end"></span> by <span id="st"></span>'s.</td>
                 </tr>
                 <tr>
-                    <td>2<span id="endingNUmber"></td>
-                </tr>
-                <tr>
-                    <td>3<span id="step"></span></td>
+                    <td><span id="stepAnswer"></span></td>
                 </tr>
         </div>
     </body>
